@@ -1,3 +1,4 @@
+-- Active: 1683587375948@@127.0.0.1@3306
 
 -- Tabelas já foram criadas
 CREATE TABLE bands (
@@ -11,3 +12,7 @@ CREATE TABLE songs (
     band_id TEXT NOT NULL,
     FOREIGN KEY (band_id) REFERENCES bands (id)
 );
+
+INSERT INTO bands VALUES("b01", "Banda");
+
+DELETE FROM bands;
